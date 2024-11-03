@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscribe</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Subscribe to Trip Trail</h1>
+    <form id="subscription-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label for="packageType">Package Type:</label>
+        <select id="packageType" name="packageType" required>
+            <option value="Platinum">Platinum</option>
+            <option value="Golden">Golden</option>
+        </select>
+
+        <button type="submit">Subscribe</button>
+    </form>
+
+    <p id="response-message"></p> <!-- Display response here -->
+
+    <script src="subscribe.js"></script> <!-- Link to JavaScript file -->
+</body>
+</html>

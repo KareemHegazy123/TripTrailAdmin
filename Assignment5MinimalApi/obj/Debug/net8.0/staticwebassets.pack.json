@@ -1,0 +1,61 @@
+{
+  "Files": [
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/Board-1.png",
+      "PackagePath": "staticwebassets/Board-1.png"
+    },
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/admin.css",
+      "PackagePath": "staticwebassets/admin.css"
+    },
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/admin.html",
+      "PackagePath": "staticwebassets/admin.html"
+    },
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/admin.js",
+      "PackagePath": "staticwebassets/admin.js"
+    },
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/index.html",
+      "PackagePath": "staticwebassets/index.html"
+    },
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/login.html",
+      "PackagePath": "staticwebassets/login.html"
+    },
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/login.js",
+      "PackagePath": "staticwebassets/login.js"
+    },
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/styles.css",
+      "PackagePath": "staticwebassets/styles.css"
+    },
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/subscribe.html",
+      "PackagePath": "staticwebassets/subscribe.html"
+    },
+    {
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/subscribe.js",
+      "PackagePath": "staticwebassets/subscribe.js"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.Assignment5MinimalApi.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.build.Assignment5MinimalApi.props",
+      "PackagePath": "build\\Assignment5MinimalApi.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildMultiTargeting.Assignment5MinimalApi.props",
+      "PackagePath": "buildMultiTargeting\\Assignment5MinimalApi.props"
+    },
+    {
+      "Id": "obj/Debug/net8.0/staticwebassets/msbuild.buildTransitive.Assignment5MinimalApi.props",
+      "PackagePath": "buildTransitive\\Assignment5MinimalApi.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

@@ -1,0 +1,89 @@
+{
+  "format": 1,
+  "restore": {
+    "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/Assignment5MinimalApi.csproj": {}
+  },
+  "projects": {
+    "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/Assignment5MinimalApi.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/Assignment5MinimalApi.csproj",
+        "projectName": "Assignment5MinimalApi",
+        "projectPath": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/Assignment5MinimalApi.csproj",
+        "packagesPath": "/home/kareem/.nuget/packages/",
+        "outputPath": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/obj/",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "/home/kareem/.nuget/NuGet/NuGet.Config"
+        ],
+        "originalTargetFrameworks": [
+          "net8.0"
+        ],
+        "sources": {
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "net8.0": {
+            "targetAlias": "net8.0",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
+        }
+      },
+      "frameworks": {
+        "net8.0": {
+          "targetAlias": "net8.0",
+          "dependencies": {
+            "Dapper": {
+              "target": "Package",
+              "version": "[2.1.35, )"
+            },
+            "Microsoft.Data.Sqlite": {
+              "target": "Package",
+              "version": "[8.0.10, )"
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48",
+            "net481"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "downloadDependencies": [
+            {
+              "name": "Microsoft.AspNetCore.App.Ref",
+              "version": "[8.0.10, 8.0.10]"
+            },
+            {
+              "name": "Microsoft.NETCore.App.Host.linux-x64",
+              "version": "[8.0.10, 8.0.10]"
+            }
+          ],
+          "frameworkReferences": {
+            "Microsoft.AspNetCore.App": {
+              "privateAssets": "none"
+            },
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            }
+          },
+          "runtimeIdentifierGraphPath": "/usr/share/dotnet/sdk/8.0.403/PortableRuntimeIdentifierGraph.json"
+        }
+      }
+    }
+  }
+}
