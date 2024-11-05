@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "cSFKF0XLrNxlc6Z2ivnthte22BcMfCcI8Fx6s4dC9Ig=",
+  "Hash": "CpPA2p4IPesT1QlwwupDDKKLO9QYDQA1r7zscAWYwf0=",
   "Source": "Assignment5MinimalApi",
   "BasePath": "_content/Assignment5MinimalApi",
   "Mode": "Default",
@@ -10,17 +10,17 @@
     {
       "Name": "Assignment5MinimalApi/wwwroot",
       "Source": "Assignment5MinimalApi",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "Pattern": "**"
     }
   ],
   "Assets": [
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/admin.css",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/admin.css",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "admin.css",
       "AssetKind": "All",
@@ -36,10 +36,10 @@
       "OriginalItemSpec": "wwwroot/admin.css"
     },
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/admin.html",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/admin.html",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "admin.html",
       "AssetKind": "All",
@@ -55,10 +55,10 @@
       "OriginalItemSpec": "wwwroot/admin.html"
     },
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/admin.js",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/admin.js",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "admin.js",
       "AssetKind": "All",
@@ -74,10 +74,10 @@
       "OriginalItemSpec": "wwwroot/admin.js"
     },
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/Board-1.png",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/Board-1.png",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "Board-1.png",
       "AssetKind": "All",
@@ -93,10 +93,10 @@
       "OriginalItemSpec": "wwwroot/Board-1.png"
     },
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/index.html",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/index.html",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "index.html",
       "AssetKind": "All",
@@ -112,10 +112,10 @@
       "OriginalItemSpec": "wwwroot/index.html"
     },
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/login.html",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/login.html",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "login.html",
       "AssetKind": "All",
@@ -131,10 +131,10 @@
       "OriginalItemSpec": "wwwroot/login.html"
     },
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/login.js",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/login.js",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "login.js",
       "AssetKind": "All",
@@ -150,10 +150,10 @@
       "OriginalItemSpec": "wwwroot/login.js"
     },
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/styles.css",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/styles.css",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "styles.css",
       "AssetKind": "All",
@@ -169,10 +169,10 @@
       "OriginalItemSpec": "wwwroot/styles.css"
     },
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/subscribe.html",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/subscribe.html",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "subscribe.html",
       "AssetKind": "All",
@@ -188,10 +188,10 @@
       "OriginalItemSpec": "wwwroot/subscribe.html"
     },
     {
-      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/subscribe.js",
+      "Identity": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/subscribe.js",
       "SourceId": "Assignment5MinimalApi",
       "SourceType": "Discovered",
-      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/",
+      "ContentRoot": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/",
       "BasePath": "_content/Assignment5MinimalApi",
       "RelativePath": "subscribe.js",
       "AssetKind": "All",

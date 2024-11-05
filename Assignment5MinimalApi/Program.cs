@@ -2,6 +2,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Data.Sqlite;
 using Dapper;
+using DotNetEnv;
+
+Env.Load(); // Load environment variables from .env file for local development
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();

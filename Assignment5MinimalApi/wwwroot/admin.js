@@ -5,10 +5,17 @@ function displayMessage(message) {
     document.getElementById("response-message").textContent = message;
 }
 
+// Determine the base URL dynamically
+const getBaseUrl = () => {
+    // If deployed, use the Render-provided URL; fallback to localhost for local dev
+    return window.location.origin.includes("localhost") ? "http://localhost:5272" : "https://yourappname.onrender.com";
+};
+
+
 // Fetch and display all members
 async function getAllMembers() {
     try {
-        const response = await fetch("http://localhost:5272/members");
+        const response = await fetch(`${getBaseUrl()}/members`);
         if (!response.ok) throw new Error("Failed to fetch members");
 
         const members = await response.json();
@@ -20,6 +27,7 @@ async function getAllMembers() {
         displayMessage("Error: " + error.message);
     }
 }
+
 
 // Add a new member (prompt for name, email, and package type)
 async function addMember() {
@@ -33,7 +41,7 @@ async function addMember() {
     }
 
     try {
-        const response = await fetch("http://localhost:5272/members", {
+        const response = await fetch(`${getBaseUrl()}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -64,7 +72,7 @@ async function addAdmin() {
     }
 
     try {
-        const response = await fetch("http://localhost:5272/add-admin", {
+        const response = await fetch(`${getBaseUrl()}`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -93,7 +101,7 @@ async function deleteMember() {
     }
 
     try {
-        const response = await fetch(`http://localhost:5272/members/${memberId}`, {
+        const response = await fetch(`${getBaseUrl()}/${memberId}`, {
             method: "DELETE"
         });
 

@@ -1,43 +1,43 @@
 {
   "Files": [
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/Board-1.png",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/Board-1.png",
       "PackagePath": "staticwebassets/Board-1.png"
     },
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/admin.css",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/admin.css",
       "PackagePath": "staticwebassets/admin.css"
     },
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/admin.html",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/admin.html",
       "PackagePath": "staticwebassets/admin.html"
     },
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/admin.js",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/admin.js",
       "PackagePath": "staticwebassets/admin.js"
     },
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/index.html",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/index.html",
       "PackagePath": "staticwebassets/index.html"
     },
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/login.html",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/login.html",
       "PackagePath": "staticwebassets/login.html"
     },
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/login.js",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/login.js",
       "PackagePath": "staticwebassets/login.js"
     },
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/styles.css",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/styles.css",
       "PackagePath": "staticwebassets/styles.css"
     },
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/subscribe.html",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/subscribe.html",
       "PackagePath": "staticwebassets/subscribe.html"
     },
     {
-      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/wwwroot/subscribe.js",
+      "Id": "/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/wwwroot/subscribe.js",
       "PackagePath": "staticwebassets/subscribe.js"
     },
     {
