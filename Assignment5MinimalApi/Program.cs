@@ -10,6 +10,7 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 // Use SQLite for local and deployed environment
+var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
 var connectionString = "Data Source=Assignment5MinimalApi/data.db"; // Adjust path if needed
 
 // Set WAL mode for SQLite once during application startup
