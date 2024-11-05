@@ -1,53 +1,22 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
-using Dapper;
-using Npgsql;
-using DotNetEnv;
 using Microsoft.Data.Sqlite;
+using Dapper;
+using DotNetEnv;
 
 Env.Load(); // Load environment variables from .env file for local development
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-// Retrieve the DATABASE_URL environment variable for Render or fallback to local SQLite
-var databaseUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
+// Use SQLite for local and deployed environment
+var connectionString = "Data Source=Assignment5MinimalApi/data.db"; // Adjust path if needed
 
-string connectionString;
-
-if (string.IsNullOrEmpty(databaseUrl))
+// Set WAL mode for SQLite once during application startup
+using (var connection = new SqliteConnection(connectionString))
 {
-    // Fallback to SQLite for local development
-    connectionString = "Data Source=/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/data.db";
-
-    // Set WAL mode for SQLite once during application startup
-    using (var connection = new SqliteConnection(connectionString))
-    {
-        await connection.OpenAsync();
-        await connection.ExecuteAsync("PRAGMA journal_mode=WAL;");
-    }
-}
-else
-{
-    // Convert DATABASE_URL to a format compatible with Npgsql
-    connectionString = ConvertPostgresUrlToConnectionString(databaseUrl);
-}
-
-// Helper function to convert DATABASE_URL to Npgsql-compatible connection string
-string ConvertPostgresUrlToConnectionString(string databaseUrl)
-{
-    var uri = new Uri(databaseUrl);
-    var userInfo = uri.UserInfo.Split(':');
-    var builder = new NpgsqlConnectionStringBuilder
-    {
-        Host = uri.Host,
-        Port = uri.Port,
-        Username = userInfo[0],
-        Password = userInfo[1],
-        Database = uri.AbsolutePath.Trim('/')
-    };
-
-    return builder.ToString();
+    await connection.OpenAsync();
+    await connection.ExecuteAsync("PRAGMA journal_mode=WAL;");
 }
 
 // Serve default files and static files (index.html will be the default page)
@@ -57,7 +26,7 @@ app.UseStaticFiles();
 // API endpoint to retrieve all members (GET request)
 app.MapGet("/members", async () =>
 {
-    using var connection = new NpgsqlConnection(connectionString);
+    using var connection = new SqliteConnection(connectionString);
     var members = await connection.QueryAsync<Member>("SELECT id, name, email, package_type AS PackageType FROM members");
     return Results.Ok(members);
 });
@@ -72,7 +41,7 @@ app.MapPost("/members", async (Member member) =>
     {
         try
         {
-            using var connection = new NpgsqlConnection(connectionString);
+            using var connection = new SqliteConnection(connectionString);
             await connection.OpenAsync();
 
             var sql = "INSERT INTO members (name, email, package_type) VALUES (@Name, @Email, @PackageType)";
@@ -87,7 +56,7 @@ app.MapPost("/members", async (Member member) =>
                 return Results.Json(new { error = "Failed to create member." });
             }
         }
-        catch (NpgsqlException ex) when (ex.ErrorCode == 5) // Database locked error
+        catch (SqliteException ex) when (ex.SqliteErrorCode == 5) // SQLite Error 5: Database is locked
         {
             if (attempt == maxRetries)
             {
@@ -105,7 +74,7 @@ app.MapDelete("/members/{id}", async (int id) =>
 {
     try
     {
-        using var connection = new NpgsqlConnection(connectionString);
+        using var connection = new SqliteConnection(connectionString);
         var sql = "DELETE FROM members WHERE id = @Id";
         var result = await connection.ExecuteAsync(sql, new { Id = id });
 
@@ -125,7 +94,7 @@ app.MapDelete("/members/{id}", async (int id) =>
 // API endpoint to retrieve all admins (GET request)
 app.MapGet("/admins", async () =>
 {
-    using var connection = new NpgsqlConnection(connectionString);
+    using var connection = new SqliteConnection(connectionString);
     var admins = await connection.QueryAsync<Admin>("SELECT id, username FROM admins"); // Exclude password for security
     return Results.Ok(admins);
 });
@@ -133,7 +102,7 @@ app.MapGet("/admins", async () =>
 // API endpoint to add a new admin (POST request)
 app.MapPost("/add-admin", async (AdminLogin newAdmin) =>
 {
-    using var connection = new NpgsqlConnection(connectionString);
+    using var connection = new SqliteConnection(connectionString);
     var sql = "INSERT INTO admins (username, password) VALUES (@Username, @Password)";
     
     var result = await connection.ExecuteAsync(sql, newAdmin);
@@ -153,7 +122,7 @@ app.MapPost("/admin/login", async (HttpRequest request) =>
         return Results.Json(new { error = "Invalid request data" }, statusCode: 400);
     }
 
-    using var connection = new NpgsqlConnection(connectionString);
+    using var connection = new SqliteConnection(connectionString);
     
     // Check if admin exists in database
     var admin = await connection.QueryFirstOrDefaultAsync<Admin>(
