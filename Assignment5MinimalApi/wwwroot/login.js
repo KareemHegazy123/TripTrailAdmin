@@ -5,7 +5,7 @@ document.getElementById("login-form").addEventListener("submit", async (event) =
     const password = document.getElementById("password").value;
 
     try {
-        const response = await fetch(`${getBaseUrl()}/admin/login`, {
+        const response = await fetch("http://localhost:5272/admin/login", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -15,7 +15,6 @@ document.getElementById("login-form").addEventListener("submit", async (event) =
                 password: password
             })
         });
-        
 
         // Check if the response status is OK (200-299)
         if (!response.ok) {
@@ -39,10 +38,3 @@ document.getElementById("login-form").addEventListener("submit", async (event) =
         document.getElementById("response-message").textContent = "Network error: " + error.message;
     }
 });
-
-// Determine the base URL dynamically
-const getBaseUrl = () => {
-    // If deployed, use the Render-provided URL; fallback to localhost for local dev
-    return window.location.origin.includes("localhost") ? "http://localhost:5272" : "https://yourappname.onrender.com";
-};
-

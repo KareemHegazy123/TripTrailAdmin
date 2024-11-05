@@ -105,3 +105,6 @@
 /home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/obj/Debug/net8.0/Assignment5MinimalApi.pdb
 /home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/obj/Debug/net8.0/Assignment5MinimalApi.genruntimeconfig.cache
 /home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/obj/Debug/net8.0/ref/Assignment5MinimalApi.dll
+/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/bin/Debug/net8.0/DotNetEnv.dll
+/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/bin/Debug/net8.0/Npgsql.dll
+/home/kareem/Desktop/SKT/Assignments/Assignment_5/TripTrailAdmin/Assignment5MinimalApi/bin/Debug/net8.0/Sprache.dll

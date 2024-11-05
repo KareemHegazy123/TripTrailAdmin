@@ -6,7 +6,7 @@ document.getElementById("subscription-form").addEventListener("submit", async (e
     const packageType = document.getElementById("packageType").value;
 
     try {
-        const response = await fetch(`${getBaseUrl()}/members`, {
+        const response = await fetch("http://localhost:5272/members", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
@@ -17,7 +17,6 @@ document.getElementById("subscription-form").addEventListener("submit", async (e
                 packageType: packageType
             })
         });
-        
 
         // Parse the JSON response only once and store it in a variable
         const result = await response.json();
@@ -31,8 +30,3 @@ document.getElementById("subscription-form").addEventListener("submit", async (e
         document.getElementById("response-message").textContent = "Network error: " + error.message;
     }
 });
-// Determine the base URL dynamically
-const getBaseUrl = () => {
-    // If deployed, use the Render-provided URL; fallback to localhost for local dev
-    return window.location.origin.includes("localhost") ? "http://localhost:5272" : "https://yourappname.onrender.com";
-};

@@ -2,16 +2,12 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.Hosting;
 using Microsoft.Data.Sqlite;
 using Dapper;
-using DotNetEnv;
-
-Env.Load(); // Load environment variables from .env file for local development
 
 var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
-// Use SQLite for local and deployed environment
-var environment = Environment.GetEnvironmentVariable("ASPNETCORE_ENVIRONMENT");
-var connectionString = "Data Source=Assignment5MinimalApi/data.db"; // Adjust path if needed
+// SQLite connection string (adjust the path to your actual SQLite database)
+var connectionString = "Data Source=/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/data.db";
 
 // Set WAL mode for SQLite once during application startup
 using (var connection = new SqliteConnection(connectionString))
@@ -137,6 +133,7 @@ app.MapPost("/admin/login", async (HttpRequest request) =>
     }
     else
     {
+        // Return JSON response with status code 401 for unauthorized
         return Results.Json(new { error = "Invalid username or password" }, statusCode: 401);
     }
 });
@@ -164,4 +161,5 @@ public class Admin
 {
     public int Id { get; set; }
     public string Username { get; set; } = string.Empty;
+    // Password is omitted for security in get requests
 }
