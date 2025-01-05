@@ -7,7 +7,7 @@ var builder = WebApplication.CreateBuilder(args);
 var app = builder.Build();
 
 // SQLite connection string (adjust the path to your actual SQLite database)
-var connectionString = "Data Source=/home/kareem/Desktop/SKT/Assignments/Assignment_5/Assignment5MinimalApi/data.db";
+var connectionString = "Data Source=data.db";
 
 // Set WAL mode for SQLite once during application startup
 using (var connection = new SqliteConnection(connectionString))
